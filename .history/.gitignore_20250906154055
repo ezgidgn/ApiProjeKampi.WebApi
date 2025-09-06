@@ -1,0 +1,10 @@
+bin/
+obj/
+Debug/
+Release/
+.vs/
+*.user
+*.suo
+*.db
+*.db-journal
+.env
