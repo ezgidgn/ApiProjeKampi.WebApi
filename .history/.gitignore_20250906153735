@@ -1,0 +1,5 @@
+bin/
+obj/
+*.nupkg
+# global packages folder (sadece özel durumlarda gerekirse)
+.nuget/

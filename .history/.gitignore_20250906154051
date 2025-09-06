@@ -1,0 +1,9 @@
+bin/
+obj/
+Debug/
+.vs/
+*.user
+*.suo
+*.db
+*.db-journal
+.env
