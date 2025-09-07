@@ -4,7 +4,7 @@ using ApiProjeKampi.WebApi.Entites;
 
 namespace ApiProjeKampi.WebApi.Context;
 
-public class ApiContextc : DbContext
+public class ApiContext : DbContext
 {
   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 {

@@ -1,10 +1,27 @@
+
+using ApiProjeKampi.WebApi.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+var cs = builder.Configuration.GetConnectionString("DefaultConnection");
+
 
 // Swagger servislerini ekle
+builder.Services.AddDbContext<ApiContext>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers(); 
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DevCors", p =>
+        p.AllowAnyOrigin()
+         .AllowAnyHeader()
+         .AllowAnyMethod());
+});
 
 var app = builder.Build();
+app.MapControllers();     
 
 // Geliştirme ortamında Swagger'ı etkinleştir
 if (app.Environment.IsDevelopment())

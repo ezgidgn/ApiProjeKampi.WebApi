@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ApiProjeKampi.WebApi.Migrations
 {
-    [DbContext(typeof(ApiContextc))]
-    partial class ApiContextcModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ApiContext))]
+    partial class ApiContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

@@ -1,4 +1,30 @@
-bin/
-obj/
-Debug/
+# .NET build artifacts
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/publish/
+**/TestResults/
+
+# VS Code Local History
 .history/
+**/.history/
+
+# IDE / OS
+.vs/
+.DS_Store
+*.user
+*.suo
+
+# Packages & logs
+*.nupkg
+*.snupkg
+*.log
+
+# (İsteğe bağlı) VS Code workspace dosyalarını repo’da tutmak istersen:
+# .vscode/* dosyalarını genelde bırakıyoruz; istersen şu whitelisti kullan:
+#.vscode/*
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json

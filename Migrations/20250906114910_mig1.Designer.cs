@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ApiProjeKampi.WebApi.Migrations
 {
-    [DbContext(typeof(ApiContextc))]
+    [DbContext(typeof(ApiContext))]
     [Migration("20250906114910_mig1")]
     partial class mig1
     {
